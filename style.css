@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Plus+Jakarta+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Plus+Jakarta+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Work+Sans:wght@600&display=swap');
+
 *,::after,::before{
     margin: 0;
     padding:0 ;
@@ -141,4 +146,241 @@ nav ul li{
 }
 .second-bloc button:hover{
     background-color: #71717A;
+}
+
+/* Blog */
+#Blog{
+    background-color: #F1F2F4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Blog h2{
+    font-family: 'Poppins', sans-serif;
+    color: #212529;
+}
+.line-card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    margin: 50px 0 20px 0;
+}
+.card{
+    width: 25%;
+    /* border: 1px solid #333; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.card-image{
+    width: 100%;
+}
+.card-image  img{
+    width: 100%;
+}
+.card span{
+    font-family: 'Inter', sans-serif;
+    color: #6941C6;
+    font-size: .8rem;
+    margin: 10px 0;
+}
+.card h1{
+    font-family: 'Inter', sans-serif;
+    color: #101828;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 0 0 10px 0;
+}
+.card p{
+    color: #667085;
+    font-family: 'Inter', sans-serif;  
+    margin: 0 0 10px 0;
+}
+.card .card-btns .btn{
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 0;
+    background-color: #F9F5FF;
+    color: #6941C6;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+.card .card-btns .btn-2{
+    color: #3538CD;
+    background-color: #EEF4FF;
+}
+.card .card-btns .btn-3{
+    color: #C4320A;
+    background-color: #FFF6ED;
+}
+
+/* GALERIE */
+#Galerie{
+    padding: 20px;
+}
+#Galerie h2{
+    font-family: 'Poppins', sans-serif;
+    color: #94A3B8;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+    grid-template-rows: repeat(2, 400px); /* 2 lignes de 150 pixels chacune */
+    gap: 10px; /* Espace entre les photos */
+    margin: 20px;
+}
+  
+.photo {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.photo-1{
+    background-image: url(/images/img4.png);
+}
+.photo-2{
+    background-image: url(/images/img5.png);
+}
+.photo-3{
+    background-image: url(/images/img6.png);
+}
+.photo-4{
+    background-image: url(/images/img7.png);
+}
+
+/* FORMULAIRE */
+
+#Formulaire{
+    background-color: #101828;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#Formulaire h2{
+    font-family: 'Poppins', sans-serif;
+    color: #94A3B8;
+}
+.container-form{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+    align-items: center;
+    justify-content: center;
+}
+.form-img{
+    width: 60%;
+    height: 450px;
+    display: flex;
+}
+form h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+form p{
+    color: #D9D9D9;
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    margin: 10px 0;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;     
+}
+form div label{
+    margin: 5px 0;
+}
+form div input{
+    padding: 13px;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    margin: 0 0 10px 0;
+}
+
+.form-btn{
+    padding: 13px;
+    border-radius: 8px;
+    border: 0;
+    margin: 0 0 10px 0;
+    width: 70%;
+    margin: 10px 0;
+    background-color: #2563EB;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;     
+    font-weight: bold;
+    cursor: pointer;
+}
+.autre-liens{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.autre-liens p{
+    font-size: .7rem;
+}
+.autre-liens  a{
+    text-decoration: none;
+    color: #2563EB;
+    font-size: .7rem;
+}
+
+/* FOOTER */
+
+#Footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    background-color: #212529;
+    padding: 50px;
+    flex-direction: column;
+}
+.blocs{
+    display: flex;
+}
+.footer-bloc{
+    /* border: 1px solid #fff; */
+    margin: 10px auto;
+    /* width: 30%; */
+}
+.footer-bloc h1{
+    color:#FF3337 ;
+    font-family: 'Poppins', sans-serif;     
+}
+.footer-bloc h2{
+    color: #F3C59C;
+    font-size: 1rem;
+}
+.footer-bloc p{
+    color: #D9D9D9;
+    font-family: 'Poppins', sans-serif;     
+    font-weight: lighter;
+    font-size: .7rem;
+    width: 40%;
+    margin: 10px 0;
+}
+#Footer h3{
+    text-align: center;
+    color: #71717A;
+    margin: 10px;
 }
