@@ -53,7 +53,7 @@ nav ul li{
 /* HOME  */
 
 #Home{
-    width: 80%;
+    width: 75%;
     /* border: 1px solid #fff; */
     margin: 50px auto;
     display: flex;
@@ -76,13 +76,13 @@ nav ul li{
 }
 .logo-nft{
     /* border: 2px solid #ff0000; */
-    width: 90%;
+    width: 80%;
 }
 .logo-nft img{
     width: 80%;
 }
 .home-first-bloc p{
-    width: 90%;
+    width: 80%;
     /* border: 1px solid #fff; */
     color: #fff;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -97,7 +97,7 @@ nav ul li{
     justify-content: center;
 }
 .container-first-img{
-    width: 80%;
+    width: 70%;
     /* border: 1px solid #ff0000; */
 }
 .container-first-img img{
@@ -105,7 +105,7 @@ nav ul li{
 }
 .datas{
     /* border: 1px solid #fff; */
-    width: 80%;
+    width: 70%;
     display: flex;
     color: #fff;
     align-items: center;
@@ -128,7 +128,7 @@ nav ul li{
     letter-spacing: 3px;
 }
 .second-bloc button{
-    width: 80%;
+    width: 70%;
     background-color: transparent;
     padding: 15px;
     border: 2px solid #fff;
@@ -137,4 +137,8 @@ nav ul li{
     margin: 6px 0;
     cursor: pointer;
     border-radius: 5px;
+    transition: background .3s ease-in-out;
+}
+.second-bloc button:hover{
+    background-color: #71717A;
 }
